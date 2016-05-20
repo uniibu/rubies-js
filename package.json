@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/uniibu/rubies-js/issues"
   },
-  "homepage": "https://github.com/uniibu/rubies-js#readme"
+  "homepage": "https://github.com/uniibu/rubies-js#readme",
+  "dependencies": {
+    "lodash": "^4.12.0"
+  }
 }
