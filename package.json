@@ -1,0 +1,26 @@
+{
+  "name": "rubies-js",
+  "version": "1.0.0",
+  "description": "Rubies coin javascript library for generating address http://rbies.org",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniibu/rubies-js.git"
+  },
+  "keywords": [
+    "rubies",
+    "coin",
+    "nodejs",
+    "javascript",
+    "bitcoin"
+  ],
+  "author": "unibtc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uniibu/rubies-js/issues"
+  },
+  "homepage": "https://github.com/uniibu/rubies-js#readme"
+}
