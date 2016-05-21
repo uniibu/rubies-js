@@ -1,20 +1,19 @@
 'use strict';
 var rubies = module.exports;
-
+rubies.Random = require('./lib/crypto/random');
 rubies.Address = require('./lib/address');
 rubies.PrivateKey = require('./lib/privatekey');
 rubies.PublicKey = require('./lib/publickey');
 rubies.crypto = {};
 rubies.crypto.BN = require('./lib/crypto/bn');
-
+rubies.HdPrivateKey = require('./lib/hdprivatekey');
+rubies.HdPublicKey = require('./lib/hdpublickey');
 rubies.crypto.Hash = require('./lib/crypto/hash');
 rubies.crypto.Random = require('./lib/crypto/random');
 rubies.crypto.Point = require('./lib/crypto/point');
+var HDPrivateKey = rubies.HdPrivateKey;
+var Random = rubies.Random;
+var hdPrivateKey = new HDPrivateKey('livenet',false);
 
-var value = new Buffer('correct horse battery staple');
-var hash = rubies.crypto.Hash.sha256(value);
-var bn = rubies.crypto.BN.fromBuffer(hash);
-
-var address = new rubies.PrivateKey(bn,'testnet').toAddress();
-
-console.log(address);
+console.log(hdPrivateKey.derive(1));
+console.log(hdPrivateKey.hdPublicKey);
